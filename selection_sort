@@ -10,6 +10,7 @@ void selection_sort(int arr[], int n) {
     for (int j = i + 1; j < n; j++) {
     
       if (arr[j] < arr[mini]) {
+
         mini = j;
       }
       
@@ -23,6 +24,7 @@ void selection_sort(int arr[], int n) {
 
   cout << "After selection sort: " << "\n";
   for (int i = 0; i < n; i++) {
+
     cout << arr[i] << " ";
   }
   cout << "\n";
@@ -38,6 +40,8 @@ int main() {
     cout << arr[i] << " ";
   }
   cout << "\n";
+
   selection_sort(arr, n);
+
   return 0;
 }
